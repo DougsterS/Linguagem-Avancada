@@ -4,6 +4,7 @@ public class Atributos {
 	
 	private String numero;
 	private float saldo;
+	private String nome;
 	
 	public String getNumero() {
 		return this.numero;
@@ -16,6 +17,22 @@ public class Atributos {
 	}
 	public void setSaldo(float dindin) {
 		this.saldo = dindin;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void saqueDinheiro(float sacar) {
+		this.saldo = this.saldo - sacar;
+	}
+	
+	public void depositaDinheiro(float depositar) {
+		this.saldo = this.saldo + depositar;
 	}
 	
 }
