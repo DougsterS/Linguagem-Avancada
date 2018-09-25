@@ -9,7 +9,7 @@ public class QueueTest {
 		
 		fila.empty();
 		
-		System.out.print("\n\n");
+		System.out.print("\n");
 		
 		fila.insert("Douglas");
 		fila.insert(12);
@@ -20,16 +20,16 @@ public class QueueTest {
 		
 		fila.remove();
 		
-		System.out.println("\n\nSecond Queue:");
+		System.out.println("\nSecond Queue:");
 		fila.listNames();
 		
 		fila.remove();
 		fila.insert("Mais um item");
 		
-		System.out.println("\n\nThird Queue:");
+		System.out.println("\nThird Queue:");
 		fila.listNames();
 		
-		System.out.print("\n\n");
+		System.out.print("\n");
 		
 		fila.empty();
 	}
