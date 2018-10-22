@@ -8,7 +8,7 @@ public class TesteExcessao {
             
 		int dividendo = 1;
 		int divisor = 0;
-                int resultado = 0;
+		int resultado = 0;
 		
                 do{
                     try{
