@@ -13,18 +13,19 @@ public class Server extends UnicastRemoteObject implements MyInterface{//Todo se
 		super();
 	}
 	
-	public String helloName(String name){
+	public String helloName(String name)throws RemoteException{
 		return("Valar Dohaerys, " + name);
 	}
 	
 	public static void main(String[] args) {
 		try {
+			System.out.Println("Servidor iniciado");
 			Server servidor = new Server();
 			Naming.rebind("/Westeros", servidor);
-		} catch (RemoteException e) {
+			System.out.Println("The Winter is Coming");
+			} catch (RemoteException e) {
 			e.printStackTrace();
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
